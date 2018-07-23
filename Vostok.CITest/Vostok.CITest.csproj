@@ -1,8 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  
   <Import Project="..\..\vostok.devtools\git-commit-to-assembly-title\Vostok.Tools.GitCommit2AssemblyTitle.props" />
-
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Configurations>Debug;Release</Configurations>
@@ -11,19 +9,17 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IncludeSymbols>true</IncludeSymbols>
   </PropertyGroup>
-
   <PropertyGroup>
     <VersionPrefix>0.0.1</VersionPrefix>
-    <VersionSuffix></VersionSuffix>
+    <VersionSuffix>
+    </VersionSuffix>
   </PropertyGroup>
-
   <PropertyGroup>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
     <PackageVersion>$(Version)</PackageVersion>
     <PackageReleaseNotes>TODO</PackageReleaseNotes>
   </PropertyGroup>
-
   <PropertyGroup>
     <Authors>Vostok team</Authors>
     <Company>SKB Kontur</Company>
@@ -32,7 +28,6 @@
     <Title>TODO</Title>
     <Description>TODO</Description>
   </PropertyGroup>
-
   <PropertyGroup>
     <PackageProjectUrl>TODO</PackageProjectUrl>
     <PackageLicenseUrl>TODO</PackageLicenseUrl>
@@ -41,5 +36,14 @@
     <RepositoryUrl>TODO</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Reference Include="Vostok.Logging.Abstractions">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vostok.logging.abstractions\Vostok.Logging.Abstractions\bin\Release\netstandard2.0\Vostok.Logging.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Vostok.Configuration.Abstractions">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\vostok.configuration.abstractions\Vostok.Configuration.Abstractions\bin\Release\netstandard2.0\Vostok.Configuration.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
